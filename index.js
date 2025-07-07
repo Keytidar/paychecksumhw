@@ -17,7 +17,7 @@ let company = {
       ...this.development.web,
       ...this.development.internals,
     ];
-    let allSalaries = allEmployees.map((el) => el.salary);
+    let allSalaries = allEmployees.map(el => el.salary);
     return allSalaries.reduce((acc, el) => {
       return acc + el;
     });
